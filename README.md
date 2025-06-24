@@ -1,4 +1,3 @@
-```markdown
 # 🌡️ Temperature & Humidity Real-Time Monitoring using ESP32 + DHT22 + ThingSpeak
 
 Monitor temperature and humidity data in real-time using an ESP32 microcontroller and a DHT22 sensor. The data is pushed to a cloud dashboard using ThingSpeak, enabling remote visualization and threshold-based alerting.
@@ -23,6 +22,9 @@ DHT22 Sensor → ESP32 (via GPIO) → WiFi → ThingSpeak (Cloud Dashboard)
 | DHT22 Sensor     | 1        |
 
 ---
+
+### 🔌 Circuit Diagram
+![Wokwi Circuit](assets/circuit-diagram.png)
 
 ## 🔌 Circuit Schematic (Wokwi)
 
@@ -49,7 +51,7 @@ Install the following libraries in Arduino IDE:
 
 ---
 
-## 🧪 Code Overview
+## 💻 Code Overview
 
 ```cpp
 // Read sensor data
@@ -67,7 +69,7 @@ ThingSpeak.writeFields(myChannelNumber, myApiKey);
 
 1. Open the project in Arduino IDE
 2. Select board: `ESP32 Dev Module`
-3. Connect your ESP32 via USB
+3. Connect your ESP32 via USB/ Run the simulation on Wokwi(if no Hardware is present)
 4. Paste the code from `sketch.ino`
 5. Install required libraries
 6. Enter your ThingSpeak API key & channel number
@@ -86,10 +88,8 @@ https://thingspeak.com/channels/your-channel-id
 
 ### 📈 Sample Output:
 
-* Temperature in Field 1
-* Humidity in Field 2
-* Auto-refreshed line graphs
-* Dashboard gauges
+### 📊 ThingSpeak Dashboard
+![ThingSpeak Graphs](assets/thingspeak-dashboard.png)
 
 ---
 
@@ -100,21 +100,3 @@ IoT Enthusiast | Computer Science Student
 [GitHub](https://github.com/TRITUSLegend) · [LinkedIn](https://www.linkedin.com/in/adityarajkar/)
 
 ---
-
-## 🛠️ License
-
-This project is licensed under the MIT License.
-
-````
-
----
-
-### ✅ Next Steps
-
-- ✅ Paste this `README.md` content into your GitHub repo.
-- 📸 (Optional) Upload a **screenshot of your ThingSpeak dashboard** and include it under the **"Sample Output"** section using:
-```markdown
-![Dashboard Preview](assets/dashboard-preview.png)
-````
-
-Let me know if you want this turned into a downloadable file or want help publishing it live!
