@@ -88,7 +88,6 @@ https://thingspeak.com/channels/your-channel-id
 
 ### 📈 Sample Output:
 
-### 📊 ThingSpeak Dashboard
 ![ThingSpeak Graphs](assets/thingspeak-dashboard.png)
 
 ---
